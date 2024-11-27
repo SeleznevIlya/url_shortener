@@ -28,7 +28,13 @@ func main() {
 		os.Exit(1)
 	}
 
-	_ = storage
+	id, err := storage.SaveURL("https://www.youtube.com/watch?v=Ctlz0pSY0PI1", "avtopodbor1")
+	if err != nil {
+		log.Error("failed to save url", sl.Err(err))
+		os.Exit(1)
+	}
+
+	log.Info("saved url", slog.Int64("id", id))
 
 	// TODO: init storage: postgres
 

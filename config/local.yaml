@@ -1,6 +1,8 @@
 env: "local" # local, dev, prod
 
-storage_path: "host=localhost port=5432 user=postgres dbname=url_shortener password=mbc26c sslmode=disable"
+# storage_path: "host=localhost port=5432 user=postgres dbname=url_shortener password=mbc26c sslmode=disable"
+storage_path: "host=localhost port=5436 user=postgres dbname=postgres password=mbc26c sslmode=disable"
+
 
 
 http_server:
