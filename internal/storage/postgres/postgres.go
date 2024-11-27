@@ -3,6 +3,8 @@ package postgres
 import (
 	"database/sql"
 	"fmt"
+
+	_ "github.com/golang-migrate/migrate/v4/database/postgres"
 )
 
 type Storage struct {
